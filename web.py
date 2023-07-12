@@ -44,7 +44,7 @@ def pdf_view(uploaded):
     if uploaded is not None:
         file_data = uploaded.read()
         base64_pdf = base64.b64encode(file_data).decode('utf-8')
-        pdf_display = F'<iframe src="data:application/pdf;base64,{base64_pdf}" width="1300" height="1800" type="application/pdf"></iframe>'
+        pdf_display = F'<iframe src="data:application/pdf;base64,{base64_pdf}" width="700" height="1000" type="application/pdf"></iframe>'
 
         st.markdown(pdf_display, unsafe_allow_html=True)
 
