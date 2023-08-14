@@ -7,7 +7,7 @@ if not os.path.exists("todos.txt"):
     with open("todos.txt", "w")as file:
         pass
 
-st.set_page_config(layout="wide", page_icon="random", page_title="plikka work")
+st.set_page_config(layout="wide", page_icon="penguin", page_title="plikka work")
 todos = functions.readfile()
 #completed = functions.readfile(txt="completed.txt")
 
